@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel para Mascotas</title>
+</head>
+<body>
+    <header>
+         <h1>Hotel para Mascotas</h1>
+    </header>
+
+    <main>
+        <h2>completa el formulario con los datos de tu mascota</h2>
+        <form method="POST">
+
+            <label for="nombre">nombre</label>
+            <input type="text" nombre id="nombre" placeholder="nombre de la mascota" maxlength="30">
+
+            <label>apellido
+                   <input type="text" id="apellido" placeholder="apellido" minlength="2">
+            </label>
+        <br>
+        <br>
+
+        <h3>Ahora contanos sobre tu mascota</h3>
+          <textarea name="comentario" id="comentario" cols="30" rows="10" placeholder="ingrese comentario"></textarea>
+
+          <br>
+          <br>
+           <h3>¡cuanto pesa tu mascota?</h3>
+           <label>
+                  <input type="checkbox" name="5 a 10 kilos" value="5 a 10 kilos">5 a 10 kilos
+           </label>
+
+           <label>
+               <input type="checkbox" name="10 a 15 kilos" value="10 a 15 kilos">10 a 15 kilos
+           </label>
+
+           <label>
+               <input type="checkbox" name="15 a 20 kilos" value="15 a 20 kilos">15 a 20 kilos
+           </label>
+           
+           <br>
+           <br>
+
+           <h3>que raza es ?</h3>
+
+           <select name="raza" id="raza" multiple>
+
+                <option value="shih tzu">shih tzu</option>
+                <option value="beagle">beagle</option>
+                <option value="chihuahua">chihuahua</option>
+                <option value="Yorkshire Terrier">Yorkshire Terrier</option>
+                <option value="Bichón Frisé">Bichón Frisé</option>
+
+            </select>
+
+            <h3>mostranos como es tu mascota</h3>
+
+            
+            <input type="file" name="fotito" id="foto" accept="image/">
+
+
+            <h3>Elegi la estadia que queres para tu mascota</h3>
+            
+
+            <label>1 semana
+                    <input type="radio" name="valor" id="valor1" value="20">20$us
+            </label>
+              <br>
+              <br>
+
+            <label>2 semanas
+                <input type="radio" name="valor" id="valor1" value="25">25$us
+            </label>
+             
+            <br>
+            <br>
+
+            <label>1 mes
+                <input type="radio" name="valor" id="valor1" value="35">35$us
+            </label>
+
+            <h3>Ahora solo falta que nos dejes tu correo para que nos contactemos con vos</h3>
+
+            <label>
+                <input type="correo" name="correo" id="correo" placeholder="ingrese su correo electronico">
+            
+                <br>
+                <br>
+               
+               <label>
+                <input type="submit" name="button" value="Enviar"> 
+               </label>
+            </label>
+
+
+        </form>
+    </main>
+
+    
+</body>
+</html>
